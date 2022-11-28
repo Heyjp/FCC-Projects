@@ -1,0 +1,20 @@
+body {
+ padding: 0px;
+ margin: 0px;
+}
+
+textarea {
+  height: 600px;
+  max-height: 600px;
+  max-width: 100%;
+}
+
+#outputBox {
+  display: inline-block;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.box {
+  height: 600px;
+}

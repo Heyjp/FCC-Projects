@@ -1,0 +1,43 @@
+nav.red.white-text
+    .container
+      .nav-wrapper
+        a.brand-logo.center(href='#')
+          if user
+            a.button-collapse(href='#', data-activates='mobile-demo')
+              i.material-icons menu
+            ul#nav-mobile.left.hide-on-med-and-down
+              li
+                a(href='/') Home
+              li
+                a(href='/create') Create
+              li
+                a(href='/dashboard') Delete Polls
+            ul#nav-mobile.right.hide-on-med-and-down
+                li
+                  a(href='/logout') Logout
+            ul#mobile-demo.side-nav
+              li
+                a(href='/') Home
+              li
+                a(href='/create') Create
+              li
+                a(href='/dashboard') Delete Polls
+              li
+                a(href='/logout') Logout
+          if !user
+            a.button-collapse(href='#', data-activates='mobile-demo')
+              i.material-icons menu
+            ul#nav-mobile.left.hide-on-med-and-down
+              li
+                a(href='/') Home
+              li
+                a(href='/login') Login
+              li
+                a(href='/register') Register
+            ul#mobile-demo.side-nav
+              li
+                a(href='/') Home
+              li
+                a(href='/login') Login
+              li
+                a(href='/register') Register

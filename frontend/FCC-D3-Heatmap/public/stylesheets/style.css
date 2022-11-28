@@ -1,0 +1,40 @@
+body {
+  background-color: green;
+  padding-top: 70px;
+}
+
+
+.svgChart {
+  background-color: white;
+}
+
+.svgChart text {
+  fill: black;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.svgChart circle {
+  stroke: black;
+  border: 2px solid white;
+}
+
+rect:hover {
+  fill: black;
+}
+
+div.tooltip {
+  position: absolute;
+  bottom: 200px;
+  text-align: center;
+  width: 90px;
+  height: 60px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: black;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  color: white;
+  opacity: 0;
+}

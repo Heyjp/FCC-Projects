@@ -1,0 +1,147 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lora');
+</style>
+
+body {
+  padding: 0px;
+  margin: 0px;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Lora', serif !important;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h3, h4 {
+  font-weight: bold !important;
+}
+
+p {
+  font-size: 16px;
+}
+nav li a {
+
+  color: #212121;
+}
+
+.nav-wrapper a {
+  color: #212121 !important;
+}
+
+.form-handler {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#custom-option {
+
+  text-align: right;
+  display: block;
+
+}
+
+#create-new-option {
+float: right;
+display: block;
+}
+
+.no-contain {
+  display: flex;
+}
+
+.no-contain input {
+  padding-left: 0px !important;
+  margin: 0px 0px 15px 0px !important;
+}
+
+.no-contain a {
+  align-self: flex-end;
+  padding-left: 2px;
+}
+
+.option-submitter {
+
+  display: block;
+}
+
+form button {
+  margin: 0px 5px;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+#custom-option {
+  margin-bottom: 10px;
+}
+
+@media only screen
+  and (max-width: 600px) {
+    .submit-choice {
+      width: 100%;
+    }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 25px 0px;
+  margin: 0px;
+  margin-bottom: 30px;
+  min-height: 40vh;
+  background-image: url("/images/pattern.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.main-body .col {
+  padding: 0px;
+}
+
+.main-content {
+  min-height: 36vh;
+}
+
+#create-new-option {
+  margin-top: 15px;
+}
+
+.collection-item {
+  font-size: 24px;
+  padding: 100px;
+}
+
+.support {
+  position: relative;
+  left: 65px;
+  bottom: 20px
+}
+
+.nav-wrapper a {
+  font-weight: 500;
+  font-size: 1em;
+  color: white !important;
+}
+
+.btn {
+  background-color: #ef9a9a;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background-color: #b71c1c;
+}
+
+.side-nav a {
+  color: black !important;
+}

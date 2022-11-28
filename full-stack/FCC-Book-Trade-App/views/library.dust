@@ -1,0 +1,60 @@
+{>base/}
+
+{<content}
+<div class="row">
+  <div id="show" class="center">
+    <a class="waves-effect waves-light orange lighten-1 btn-large" id="b-request">Your Book Requests</a>
+    <a class="waves-effect waves-light #26a69a teal lighten-1 btn-large" id="o-request">Requests to Trade with You</a>
+  </div>
+
+  <div id="incoming">
+    <ul class="library">
+      {#inc}
+        <li><a>{bookTitle}</a><i id="{_id|h}" class="cancel-request material-icons small">clear</i></a>
+      {/inc}
+    </ul>
+  </div>
+
+  <div id="outgoing">
+    <ul class="library">
+      {#out}
+        <li><a>{bookTitle}</a><i id="{_id|h}" class="accept-trade material-icons small tick">done</i><i id="{_id|h}" class="cancel-trade material-icons small">clear</i></a>
+      {/out}
+    </ul>
+  </div>
+
+  <div id="library">
+    <div class="container">
+      <div class="row col 12">
+      <h2> Your Books </h2>
+        {#books}
+          <div class="col s3 card">
+            <div class="card-image">
+              <img src={BookImg|u} />
+            </div>
+            <div class="card-content">
+              <p>{bookTitle}</p>
+            </div>
+          </div>
+        {/books}
+      </div>
+    </div>
+  </div>
+
+  <div id="searchBox">
+    <form method="post" action="/search" id="lib">
+      <input type="text" name="title" id="title">
+      <input type="text" name="author" id="author">
+      <input type="submit" name="searchbooks" id="submit-search">
+    </form>
+  </div>
+
+  <div class="col s12" id="placeholder">
+  </div>
+
+  <div class="row center" >
+    <a class="waves-effect waves-light btn" id="selector">Add Book To Collection</a>
+  </div>
+
+</div>
+{/content}

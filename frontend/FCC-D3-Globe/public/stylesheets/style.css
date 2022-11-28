@@ -1,0 +1,35 @@
+body {
+  padding-top: 70px;
+  height: 100%;
+  width: 2000px;
+}
+
+div.tooltip {
+  position: absolute;
+  bottom: 200px;
+  text-align: center;
+  width: 90px;
+  height: 60px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: black;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  color: white;
+  opacity: 0;
+}
+
+svg {
+  position: absolute;
+  left: 0px;
+  top: 70px;
+  z-index: 2;
+}
+
+svg circle {
+  opacity: 0.6;
+  stroke: black;
+  stroke-width: 1px;
+  fill: magenta;
+}

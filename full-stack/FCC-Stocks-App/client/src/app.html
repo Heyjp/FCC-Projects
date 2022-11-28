@@ -1,0 +1,27 @@
+<template>
+  <require from="style.css"></require>
+
+  <div>
+    <div>
+      <div id="cont">
+      </div>
+      <div>
+        <div class="stock-panel" repeat.for="panel of panels">
+          <h2>${panel.name}</h2>
+          <p>${panel.description}</p>
+
+          <a id="remove-button" href="#" click.delegate="removeSeries(panel.name, $index)">
+              X
+          </a>
+        </div>
+        <div class="stock-finder">
+          <h3>Input Stock</h3>
+          <form submit.trigger="handleSubmit()">
+            <input type="text" value.bind="stock" placeholder="stock" />
+            <input type="submit"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

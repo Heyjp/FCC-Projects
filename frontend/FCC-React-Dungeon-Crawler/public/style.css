@@ -1,0 +1,44 @@
+body {background-color: black; padding: 0px; margin: 0px; overflow: hidden;}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100
+}
+
+.stat-block {
+  color: white;
+}
+
+canvas {
+  border-left: 2px solid white;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.title {
+  font-family: 'Metal Mania', cursive;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 100px;
+  padding-right: 50px;
+}
+
+hr {
+  width: 20%;
+}

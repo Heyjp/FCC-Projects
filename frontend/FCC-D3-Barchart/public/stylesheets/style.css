@@ -1,0 +1,73 @@
+body {
+  padding-top: 70px;
+}
+.divChart rect {
+  fill: steelblue;
+}
+
+.divChart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+.divChart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+.svgChart rect {
+  fill: steelblue;
+}
+
+.svgChart text {
+  fill: black;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.newChart rect {
+  fill: steelblue;
+}
+
+.newChart rect:hover {
+  fill: black;
+}
+
+.newChart text {
+  fill: black;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.x.axis path {
+  display: grid;
+}
+
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+div.tooltip {
+  position: absolute;
+  bottom: 200px;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}

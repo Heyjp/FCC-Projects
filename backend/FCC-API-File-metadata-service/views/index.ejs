@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <% include ../views/partials/head %>
+  </head>
+  <body>
+
+    <main>
+      <div class="wrapper">
+        <div>
+        <h3>File Meta Data Service</h3>
+        <p>Choose a file and upload to receive JSON object with file size information.</p>
+        <div>
+          <form class="" action="/upload" method="post" enctype='multipart/form-data'>
+            <input type="file" name="file">
+            <input class="button-outline" type="submit" name="submit" value="Upload">
+          </form>
+        </div>
+        <footer>
+          <% include ../views/partials/footer.ejs %>
+        </footer>
+      </div>
+    </main>
+
+
+  </body>
+
+
+</html>

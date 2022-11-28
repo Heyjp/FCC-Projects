@@ -1,0 +1,5 @@
+<div>
+<h2>Welcome {name} to the dashboard.</h2>
+<a id="incoming">You have 3 requests pending</a>
+<a id="outgoing">You have no outgoing trade request</a>
+</div>

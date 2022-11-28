@@ -1,0 +1,17 @@
+<div class="row">
+  <div>
+  <h2>Trade Center</h2>s
+  <p>Trade requests Incoming</p>
+  <ul>
+    <li>Bookname: "Treasure Island" - Requested by: "Sponjeh" </li>
+  </ul>
+  </div>
+  <div>
+  <h2>Trade Center</h2>s
+  <p>Trade requests Outgoing</p>
+  <ul>
+    <li>Bookname: "The Great Gatsby" - Owner: "Kip" </li>
+  </ul>
+  </div>
+</div>
+<script src="/javascripts/trade.js"></script>

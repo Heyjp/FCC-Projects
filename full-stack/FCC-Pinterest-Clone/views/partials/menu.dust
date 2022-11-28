@@ -1,0 +1,50 @@
+<nav class="green darken-1">
+  <div class="nav-wrapper">
+  {#images}
+    <a href="#" class="brand-logo center">{?title}{user}'s Profile {:else}Pegtrest{/title}</a>
+  {/images}
+     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li><a href="/">Home</a></li>
+      {#user}
+        <li><a href="/profile/images">My Images</a></li>
+        <li><a class="dropdown-button" data-activates="dropdown1" href="#">Add Photo<i class="material-icons right">arrow_drop_down</i></a></li>
+      {/user}
+    </ul>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {#user}
+        <li><a href="/logout">Logout</a></li>
+        {:else}
+        <li><a class="right" href="/auth/twitter">Sign in with Twitter</a><i class="fa fa-twitter-square fa-2x right" aria-hidden="true"></i></li>
+      {/user}
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="/">Home</a></li>
+      {#user}
+        <li><a href="/profile/images">My Images</a></li>
+        <li><a href="/add-image">Add Photo</a></li
+        <li class="blue lighten-4"><a href="/logout">Logout</a></li>
+        {:else}
+        <li><a href="/auth/twitter">Sign in with Twitter</a></li>
+      {/user}
+    </ul>
+  </div>
+</nav>
+
+<div class="drop-box z-depth-5 blue-text indigo lighten-5 text-darken-2 hide-on-med-and-down">
+  <div class="row">
+    <form class="col l12" method="post" action="/upload">
+      <div class="input-field col s12 m12 l12">
+        <label for="name">Image-Title</label>
+        <input type="text" name="name" placeholder="Image Title" id="name">
+      </div>
+      <div class="input-field col s12 m12 l12">
+        <label for="img-url">Image-Url</label>
+        <input type="url" id="img-url" name="url" placeholder="url">
+      </div>
+      <div class="input-field col s12 m12 l12 center-align">
+        <input type="submit" value="submit" class="center btn deep-orange lighten-1">
+      </div>
+    </form>
+  </div>
+</div>

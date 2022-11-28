@@ -1,0 +1,27 @@
+{>base/}
+
+{<content}
+<div id="showcase">
+  <div class="container">
+    <div class="row">
+    <h2> Books in the club! </h2>
+      {#data}
+        <div class="col s3 card front">
+          <div class="card-image">
+            <img src={BookImg|u}"/>
+            {?owner}
+              {#TradeRequest}
+                {:else}
+                <a href="#" class="request-trade"><i class="material-icons small trade-icon" id="{_id|h}">add</i></a>
+              {/TradeRequest}
+            {/owner}
+          </div>
+          <div class="card-content">
+            <p>{bookTitle}</p>
+          </div>
+        </div>
+      {/data}
+    </div>
+  </div>
+</div>
+{/content}
